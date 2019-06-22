@@ -2,6 +2,8 @@ package com.example.myapplication_dagger;
 
 import android.util.Log;
 
+import javax.inject.Inject;
+
 public class Car {
     private static final String TAG = "Car";
 
@@ -9,7 +11,7 @@ public class Car {
     private Wheels wheels;
 
     // now we allow Android studio generate public constructors for above private carparts
-
+    @Inject  // injecting car constructor
     public Car(Engine engine, Wheels wheels) {
         this.engine = engine;
         this.wheels = wheels;
