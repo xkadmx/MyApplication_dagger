@@ -11,7 +11,7 @@ public class Car {
     private Wheels wheels;
 
     // now we allow Android studio generate public constructors for above private carparts
-    @Inject  // injecting car constructor
+    @Inject  // injecting car constructorr
     public Car(Engine engine, Wheels wheels) {
         this.engine = engine;
         this.wheels = wheels;
